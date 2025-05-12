@@ -27,4 +27,4 @@ This project automates the deployment of a full-stack application using:
 
 ## Contributors
 
-- Gowtham A(https://github.com/Gowtham0509)
+- Gowtham A (https://github.com/Gowtham0509)
