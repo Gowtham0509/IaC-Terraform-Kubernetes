@@ -1,0 +1,15 @@
+# .gitignore
+# Terraform
+.terraform/
+terraform.tfstate*
+*.tfvars
+
+# Docker
+**/node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Kubernetes
+kubeconfig.yaml

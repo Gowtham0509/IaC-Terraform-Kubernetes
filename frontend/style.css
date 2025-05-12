@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  padding: 2rem;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+#product-form,
+#edit-section {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-form input,
+#edit-form input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 180px;
+}
+
+#product-form button,
+#edit-form button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#product-form button:hover,
+#edit-form button:hover {
+  background-color: #2980b9;
+}
+
+#product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card strong {
+  font-size: 1.1rem;
+}
+
+.product-card button {
+  margin-left: 0.5rem;
+  background-color: #27ae60;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.product-card button:hover {
+  background-color: #1e8449;
+}
+
+.product-card button:last-child {
+  background-color: #e74c3c;
+}
+
+.product-card button:last-child:hover {
+  background-color: #c0392b;
+}

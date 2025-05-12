@@ -1,0 +1,18 @@
+minikube start --driver=docker
+minikube docker-env | Invoke-Expression  # Use Minikube's Docker daemon
+docker build -t backend:latest .
+docker build -t frontend:latest .
+cd terraform
+terraform apply  # Type "yes" when prompted
+minikube tunnel
+minikube service frontend-service --url OR  kubectl get svc frontend-service
+
+
+
+
+
+# for demonstrating the self healing 
+kubectl delete pod <frontend-pod-name>
+kubectl get pods --watch
+
+

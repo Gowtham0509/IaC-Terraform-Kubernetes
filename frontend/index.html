@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🛒 Product Catalog</h1>
+
+  <div id="product-form">
+    <input type="text" id="name" placeholder="Product Name">
+    <input type="number" id="price" placeholder="Price">
+    <button onclick="addProduct()">Add Product</button>
+  </div>
+
+  <h2>Product List</h2>
+  <div id="product-list"></div>
+
+  <!-- Edit Form -->
+  <div id="edit-section" style="display: none;">
+    <h2>Edit Product</h2>
+    <form id="edit-form">
+      <input type="hidden" id="edit-id">
+      <input type="text" id="edit-name" placeholder="Product Name">
+      <input type="number" id="edit-price" placeholder="Price">
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
